@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5178882A1DBD6400085F9C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5178872A1DBD6400085F9C /* DetailViewController.swift */; };
 		2B62BDDB2A02096F007DB0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62BDDA2A02096F007DB0DB /* AppDelegate.swift */; };
 		2B62BDDD2A02096F007DB0DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62BDDC2A02096F007DB0DB /* SceneDelegate.swift */; };
 		2B62BDDF2A02096F007DB0DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62BDDE2A02096F007DB0DB /* ViewController.swift */; };
 		2B62BDE22A02096F007DB0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B62BDE02A02096F007DB0DB /* Main.storyboard */; };
 		2B62BDE42A020970007DB0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B62BDE32A020970007DB0DB /* Assets.xcassets */; };
 		2B62BDE72A020970007DB0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B62BDE52A020970007DB0DB /* LaunchScreen.storyboard */; };
+		2B62BDEF2A020ACB007DB0DB /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62BDEE2A020ACB007DB0DB /* MyTableViewCell.swift */; };
+		2BE94C5A2A30195C00F8D62F /* NowMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE94C592A30195C00F8D62F /* NowMovieViewController.swift */; };
+		2BE94C5E2A301E9600F8D62F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE94C5D2A301E9600F8D62F /* MapViewController.swift */; };
+		2BE94C622A30229F00F8D62F /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE94C612A30229F00F8D62F /* YouTubeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B5178872A1DBD6400085F9C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2B62BDD72A02096F007DB0DB /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B62BDDA2A02096F007DB0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B62BDDC2A02096F007DB0DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		2B62BDE32A020970007DB0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B62BDE62A020970007DB0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B62BDE82A020970007DB0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B62BDEE2A020ACB007DB0DB /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		2BE94C592A30195C00F8D62F /* NowMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowMovieViewController.swift; sourceTree = "<group>"; };
+		2BE94C5D2A301E9600F8D62F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2BE94C612A30229F00F8D62F /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +67,16 @@
 			isa = PBXGroup;
 			children = (
 				2B62BDDA2A02096F007DB0DB /* AppDelegate.swift */,
+				2B5178872A1DBD6400085F9C /* DetailViewController.swift */,
 				2B62BDDC2A02096F007DB0DB /* SceneDelegate.swift */,
 				2B62BDDE2A02096F007DB0DB /* ViewController.swift */,
+				2B62BDEE2A020ACB007DB0DB /* MyTableViewCell.swift */,
+				2BE94C592A30195C00F8D62F /* NowMovieViewController.swift */,
+				2BE94C5D2A301E9600F8D62F /* MapViewController.swift */,
 				2B62BDE02A02096F007DB0DB /* Main.storyboard */,
 				2B62BDE32A020970007DB0DB /* Assets.xcassets */,
 				2B62BDE52A020970007DB0DB /* LaunchScreen.storyboard */,
+				2BE94C612A30229F00F8D62F /* YouTubeViewController.swift */,
 				2B62BDE82A020970007DB0DB /* Info.plist */,
 			);
 			path = Movie;
@@ -139,8 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B62BDDF2A02096F007DB0DB /* ViewController.swift in Sources */,
+				2B62BDEF2A020ACB007DB0DB /* MyTableViewCell.swift in Sources */,
+				2BE94C622A30229F00F8D62F /* YouTubeViewController.swift in Sources */,
+				2B5178882A1DBD6400085F9C /* DetailViewController.swift in Sources */,
 				2B62BDDB2A02096F007DB0DB /* AppDelegate.swift in Sources */,
+				2BE94C5A2A30195C00F8D62F /* NowMovieViewController.swift in Sources */,
 				2B62BDDD2A02096F007DB0DB /* SceneDelegate.swift in Sources */,
+				2BE94C5E2A301E9600F8D62F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

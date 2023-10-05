@@ -1,12 +1,12 @@
 //
-//  ViewController.swift
+//  FirstMovieViewController.swift
 //  Movie
 //
-//  Created by YK on 2023/05/03.
-//
+//  Created by YK on 2023/06/07.
 //
 
 import UIKit
+
 
 // MARK: - Welcome
 struct MovieData: Codable {
@@ -25,8 +25,8 @@ struct DailyBoxOfficeList: Codable {
     let audiCnt: String
 }
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var table: UITableView!
+class FirstMovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     var movieData: MovieData?
     var movieURL = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=d20e306c5fab4d48826c41533abd407a&targetDt="
 
@@ -40,15 +40,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let yesterdayString = dateFormatter.string(from: yesterday)
         return yesterdayString
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
         movieURL += getYesterdayDateString()
         getData()
-    }
 
+        // Do any additional setup after loading the view.
+    }
+    
     func getData() {
         if let url = URL(string: movieURL) {
             let session = URLSession(configuration: .default)
@@ -74,7 +76,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             task.resume()
         }
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -88,7 +90,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let row = myIndexPath.row
         dest.movieName = (movieData?.boxOfficeResult.dailyBoxOfficeList[row].movieNm)!
     }
-
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "박스오피스(영화진흥위원회제공"+getYesterdayDateString()+")"
     }
@@ -118,4 +119,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
+
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
